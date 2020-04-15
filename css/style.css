@@ -22,14 +22,17 @@ body {
 
  font-family: "StolzLight";
  color: black;
- font-size: 18px;
+ font-size: 16px;
  line-height: 1.5;
 }
 
+header{
+ background: #2b6699;
+}
+
 .container {
- padding: 15px 5% 15px 5%;
+ padding: 0 5%;
  width: 90%;
- height: auto;
 }
 
 nav {
@@ -38,32 +41,160 @@ nav {
  text-align: right;
 }
 
+nav a {
+	color: black;
+	padding: 60px 0 60px 20px;
+	height: 100%;
+}
+
+nav a:hover {
+	color: grey;
+}
+
 main {
  position: relative;
- width: auto;
  flex-grow:1;
  z-index: 1;
 }
 
-img {
- width: 100%;
-}
-
-header{
- background: #2b6699;
- height: auto;
-}
-
-header a {
- color: #ffffff;
- margin: 20px 20px ;
+.header_menu a {
+ padding: 18px 10px ;
  text-transform: uppercase;
+ margin: 0 -2px 0 -2px;
+}
+
+.header_menu a:hover {
+background-color: black;
 }
 
 footer{
  background: gray no-repeat;
- background-size: cover;
  padding: 40px 12% 10px 13%;
  color: white;
  font-size: 15px;
 }
+
+.flex {
+	display: flex;
+}
+
+.aligin-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.line {
+ border-left: 0.5px solid white;
+ border-right: 0.5px solid white;
+}
+
+.white {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.fs_14 {
+	font-size: 14px;
+}
+
+.icon {
+	padding: 10px 10px 6px 10px;
+	height: 100%;
+}
+
+div.icon:hover {
+	background-color: black;
+}
+
+.icon img {
+	max-width: 30px;
+}
+
+.logo img {
+	max-height: 95px;
+    padding: 20px 10px;
+}
+
+.logo p {
+	font-size: 32px;
+	line-height: 0.9;
+}
+
+.partner {
+	width: 20%;
+}
+
+.partner img {
+	max-width: 90px;
+}
+
+/*Слайдер*/
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.9s ease;
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      text-align: center;
+      opacity: 1;
+      height: 100px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, .7);
+    }
+
+    .slider__control_show {
+      display: flex;
+    }
+
+    .slider__control:hover,
+    .slider__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: .9;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
