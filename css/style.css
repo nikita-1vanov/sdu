@@ -266,6 +266,17 @@ div.icon:hover {
 	max-width: 90px;
 }
 
+
+.pred_text {
+    width: 47%;
+}
+
+.pred p {
+    margin: 0 7%;
+    text-align: center;
+    font-size: 18px;
+}
+
 /*Слайдер*/
 
 .slider {
