@@ -108,8 +108,9 @@ nav li:hover > a.hsubs {
 
 nav li:hover ul.subs {
  left: 0;
- top: 34px;
- width: 180px;
+ top: 100%;
+ width: 240px;
+ background-color: #fafafa;
  
 -moz-transform: scaleY(1);
  -ms-transform: scaleY(1);
@@ -120,13 +121,14 @@ nav li:hover ul.subs {
 nav ul li {
  width: 100%;
  background-color: white;
- color: red;
+ color: #ebebeb;
 }
 
 nav ul li > a {
  font-size: 14px;
  line-height: 1;
  text-align: left;
+ background-color: #fafafa;
 }
 
 nav ul li:hover > a {
