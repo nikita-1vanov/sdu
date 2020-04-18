@@ -1,42 +1,126 @@
+/*---Шрифт---*/
+
 @font-face {
- font-family: "StolzLight";
- src:url(../fonts/StolzLight.otf);
+    font-family: "StolzLight";
+    src:url(../fonts/StolzLight.otf);
 }
 
 @font-face {
- font-family: "StolzlMedium";
- src:url(../fonts/StolzlMedium.otf);
+    font-family: "StolzlMedium";
+    src:url(../fonts/StolzlMedium.otf);
 }
 
 html {
- height: 100%;
+    height: 100%;
 }
 
 body {
- display:flex;
- flex-direction: column;
+     display:flex;
+     flex-direction: column;
 
- max-width: 1920px;
- min-width: 900px;
- height: 100%;
+     max-width: 1920px;
+     min-width: 900px;
+     height: 100%;
 
- font-family: "StolzLight";
- color: black;
- font-size: 16px;
- line-height: 1.5;
+     font-family: "StolzLight";
+     color: black;
+     font-size: 18px;
+     line-height: 1.5;
+}
+
+a {
+    color: black;
 }
 
 header{
- background: #2b6699;
+    background: #2b6699;
+}
+
+main {
+    position: relative;
+    flex-grow:1;
+    z-index: 1;
 }
 
 .container {
- padding: 0 15%;
- width: 70%;
+    padding: 0 15%;
+    width: 70%;
+}
+
+.flex {
+    display: flex;
+}
+
+.aligin-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/*---Атрибуты текста---*/
+
+.white {
+    color: #ffffff;
+}
+
+.hover_link:hover {
+    color: #0066b3;
+    transition: .5s;
 }
 
 
-/* МЕНЮ*/
+/*---Синяя шапка---*/
+
+.header_menu a {
+    font-size: 14px;
+    padding: 18px 25px ;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header_menu a:hover {
+    background-color: black;
+}
+
+.icon {
+    padding: 10px 10px 6px 10px;
+    height: 100%;
+}
+
+div.icon:hover {
+    background-color: black;
+}
+
+.icon img {
+    max-width: 30px;
+}
+
+
+/*---Логотип---*/
+
+.logo img {
+    max-height: 95px;
+    padding: 20px 10px;
+}
+
+.logo p {
+    font-size: 32px;
+    line-height: 0.9;
+}
+
+
+/*---Меню---*/
+
+.menu {
+    box-shadow:  0 10px 30px rgba(0,0,0,0.5);
+}
+
 nav {
  position: relative;
  z-index: 2;
@@ -89,7 +173,6 @@ nav li {
 nav li a {
  color: black;
  display: block;
- font-size: 16px;
  padding: 7px 20px;
  text-decoration: none;
 }
@@ -100,10 +183,6 @@ nav li:hover > a {
 
 nav li:hover > a.hsubs {
  border-bottom: 1px solid red
-}
-
-.tre li {
-	height: 100%;
 }
 
 nav li:hover ul.subs {
@@ -125,34 +204,41 @@ nav ul li {
 }
 
 nav ul li > a {
- font-size: 14px;
+ font-size: 16px;
  line-height: 1;
  text-align: left;
  background-color: #fafafa;
 }
 
 nav ul li:hover > a {
-  color: #0066b3;
   background-color: #f0f0f0;
 }
 
-/*---------------------*/
 
-main {
- position: relative;
- flex-grow:1;
- z-index: 1;
+/*---Председатель---*/
+
+.pred {
+    padding: 100px 10% 0 10%;
+    width: 80%;
 }
 
-.header_menu a {
- padding: 18px 25px ;
- text-transform: uppercase;
- margin: 0 -2px 0 -2px;
+.pred_text {
+    width: 45%;
 }
 
-.header_menu a:hover {
-background-color: black;
+.pred p {
+    margin: 0 8%;
+    text-align: center;
 }
+
+.pred_image {
+    width: 55%;
+    margin-bottom: -7px;
+}
+
+
+/*---Председатель---*/
+
 
 footer{
  background: black no-repeat;
@@ -197,63 +283,10 @@ footer li.footer_item {
 	font-weight: 800;
 }
 
-.flex {
-	display: flex;
-}
-
-.aligin-center {
-	align-items: center;
-}
-
-.justify-between {
-	justify-content: space-between;
-}
-
-.wrap {
-    flex-wrap: wrap;
-}
-
-.line {
- border-left: 0.5px solid white;
- border-right: 0.5px solid white;
-}
-
-.white {
-	color: #ffffff;
-	font-weight: 700;
-}
-
-.fs_14 {
-	font-size: 14px;
-}
-
 .zag {
-    font-size: 25px;
+    font-size: 32px;
     text-align: center;
-    padding: 60px 0 40px 0;
-}
-
-.icon {
-	padding: 10px 10px 6px 10px;
-	height: 100%;
-}
-
-div.icon:hover {
-	background-color: black;
-}
-
-.icon img {
-	max-width: 30px;
-}
-
-.logo img {
-	max-height: 95px;
-    padding: 20px 10px;
-}
-
-.logo p {
-	font-size: 32px;
-	line-height: 0.9;
+    padding: 140px 0 80px 0;
 }
 
 .partner {
@@ -266,35 +299,11 @@ div.icon:hover {
 	max-width: 90px;
 }
 
-.menu {
-box-shadow:  0 10px 30px rgba(0,0,0,0.5);	
-}
-
-.pred {
- padding: 60px 10%;
- width: 80%;
-}
-
-.pred_text {
-    width: 50%;
-}
-
-.pred p {
-    margin: 0 8%;
-    text-align: center;
-    font-size: 16px;
-}
-
-.pred_image {
-	width: 50%;
-    margin-bottom: -7px;
-}
 
 /*-------Направления деятельности----------------*/
 .directs {
     width:100%;
     margin: 0;
-    padding: 0 0 60px 0;
 }
 
 .direct {
@@ -306,7 +315,6 @@ box-shadow:  0 10px 30px rgba(0,0,0,0.5);
     position: absolute;
     z-index: 2;
     margin: 40% 8%;
-    color: white;
     font-size: 24px;
     line-height: 1;
 }
@@ -316,10 +324,6 @@ box-shadow:  0 10px 30px rgba(0,0,0,0.5);
     margin-bottom: -10px;
     background-color:rgba(0,0,0,.3);
     filter: brightness(40%);
-}
-
-.direct p:hover{
-    color: #0066b3;
 }
 
 .direct:hover p{
@@ -458,17 +462,12 @@ max-width: 100%;
 }
 
 .slide_desc {
-    font-size: 18px;
     line-height: 2;
 }
 
 .slider__item:hover p.slide_zag {
     font-size: 22px;
     transition: 1s;
-}
-
-p.slide_zag:hover {
-    color: #0066b3;;
 }
 
 .slider__item:hover  img {
