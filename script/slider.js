@@ -16,6 +16,9 @@ var multiItemSlider = (function () {
             _items = []; // массив элементов
         // наполнение массива _items
         _sliderItems.forEach(function (item, index) {
+            if (window.NodeList && !NodeList.prototype.forEach) {
+                NodeList.prototype.forEach = Array.prototype.forEach;
+            }
             _items.push({ item: item, position: index, transform: 0 });
         });
 
