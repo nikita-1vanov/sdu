@@ -170,7 +170,6 @@ nav li {
 }
 
 nav li a {
- color: black;
  display: block;
  padding: 7px 20px;
  text-decoration: none;
@@ -395,7 +394,6 @@ max-width: 100%;
 .slider__item p {
     margin: 0 7%;
     text-align: left;
-    color: black;
 }
 
 .slide_zag {
@@ -473,6 +471,8 @@ footer li.footer_item {
     font-weight: 800;
 }
 
+
+
 /*---------Медиа запросы Ширина экрана до 1600px----------*/
 
 @media only screen and (max-width: 1600px) {
@@ -482,14 +482,23 @@ footer li.footer_item {
         width: 80%;
     }
 
-    .pred {
-        padding: 100px 8% 0 8%
+    /*---Логотип---*/
+
+    .logo p {
+        font-size: 28px;
     }
+
+    /*---Председатель---*/
+
+    .pred {
+        padding: 100px 5% 0 5%
+    }
+
+    /*---Футер---*/
 
     footer {
         padding: 40px 10% 10px 10%;
     }
-
 }
 
 
@@ -506,15 +515,101 @@ footer li.footer_item {
         width: 86%;
     }
 
+    /*---Председатель---*/
+
     .pred {
         padding: 100px 5% 0 5%
     }
+
+    .pred p {
+        margin: 0 5%;
+    }
+
+    /*---Футер---*/
 
     footer {
         padding: 40px 7% 10px 7%;
     }
 
     #about_vdv{
+        display: none;
+    }
+}
+
+
+/*---------Медиа запросы Ширина экрана до 1250px----------*/
+
+@media only screen and (max-width: 1250px) {
+
+    .container {
+        padding: 0 4%;
+        width: 92%;
+    }
+
+    /*---Меню---*/
+
+    nav li a {
+        padding: 7px 10px;
+    }
+
+    /*---Председатель---*/
+
+    .pred {
+        padding: 100px 3% 0 3%
+    }
+
+    .pred p {
+        margin: 0 3%;
+    }
+}
+
+
+/*---------Медиа запросы Ширина экрана до 1100px----------*/
+
+@media only screen and (max-width: 1100px) {
+
+    /*---Логотип---*/
+
+    .logo p {
+        font-size: 22px;
+    }
+
+    /*---Председатель---*/
+
+    .pred {
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 50px 10% 0 10%
+    }
+
+    .pred p {
+        margin: 0 10%;
+        font-size: 18px;
+    }
+
+    .pred_text {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .pred_image {
+        width: 100%;
+        margin-bottom: -7px;
+    }
+
+    /*-------Направления деятельности----------------*/
+
+    .direct p {
+        font-size: 18px;
+    }
+
+    .direct:hover p{
+        font-size: 22px;
+    }
+
+    /*---Футер---*/
+
+    #about_souz {
         display: none;
     }
 }
