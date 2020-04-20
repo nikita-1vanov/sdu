@@ -1,8 +1,13 @@
 /*---Шрифт---*/
 
 @font-face {
-    font-family: "StolzLight";
-    src:url(../fonts/StolzLight.otf);
+    font-family: 'StolzLight';
+    src: url(../fonts/StolzLight.eot);
+    src: url(../fonts/StolzLight.eot) format('embedded-opentype'),
+    url(../fonts/StolzLight.woff2/) format('woff2'),
+    url(../fonts/StolzLight.woff) format('woff'),
+    url(../fonts/StolzLight.ttf) format('truetype'),
+    url(../fonts/StolzLight.svg#StolzLight) format('svg');
 }
 
 @font-face {
