@@ -14,6 +14,16 @@ var multiItemSlider = (function () {
             _transform = 0, // значение транфсофрмации .slider_wrapper
             _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
             _items = []; // массив элементов
+
+        if (window.NodeList && !NodeList.prototype.forEach) {
+            NodeList.prototype.forEach = function (callback, thisArg) {
+                thisArg = thisArg || window;
+                for (var i = 0; i < this.length; i++) {
+                    callback.call(thisArg, this[i], i, this);
+                }
+            };
+        }
+
         // наполнение массива _items
         _sliderItems.forEach(function (item, index) {
             _items.push({ item: item, position: index, transform: 0 });
