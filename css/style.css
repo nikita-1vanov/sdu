@@ -723,4 +723,51 @@ footer li.footer_item {
     .partner {
         width: 42%;
     }
+
+    /*-------Слайдер--------*/
+
+    .slider__item {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .slide_image {
+        width: 100%;
+    }
+
+    .slide_text {
+        width: 100%;
+    }
+
+    .slide_zag {
+        font-size: 44px;
+    }
+
+    .slider__item:hover p.slide_zag {
+        font-size: 50px;
+    }
+
+    .slider__control::before {
+        width: 70px;
+        height: 130px;
+    }
+
+    .slider__control {
+        top: 35%;
+        width: 100px;
+        height: 220px;
+    }
+
+    footer ul li {
+        display: none;
+    }
+
+    .zag_footer {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 28px;
+    }
 }
+
