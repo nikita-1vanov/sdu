@@ -122,6 +122,10 @@ div.icon:hover {
 
 /*---Меню---*/
 
+.menu_mob {
+    display: none;
+}
+
 .menu {
     box-shadow:  0 10px 30px rgba(0,0,0,0.5);
 }
@@ -291,18 +295,8 @@ nav ul li:hover > a {
     transition: 1s;
 }
 
-#direct1:hover {
-    border-color: white;
-    transition: 1s;
-}
-
 #direct2 {
     border-top: 50px solid greenyellow;
-    transition: 1s;
-}
-
-#direct2:hover {
-    border-color: white;
     transition: 1s;
 }
 
@@ -312,23 +306,23 @@ nav ul li:hover > a {
     transition: 1s;
 }
 
-#direct3:hover {
-    border-color: white;
-    transition: 1s;
-}
-
 #direct4 {
     border-top: 50px solid orange;
     transition: 1s;
 }
 
-#direct4:hover {
+#direct1:hover, #direct2:hover, #direct3:hover, #direct4:hover {
     border-color: white;
     transition: 1s;
 }
 
 
 /*Слайдер*/
+
+.news{
+    padding: 0 10%;
+    width: 80%;
+}
 
 .slider {
     position: relative;
@@ -530,6 +524,13 @@ footer li.footer_item {
         margin: 0 5%;
     }
 
+    /*---Слайдер---*/
+
+    .news{
+        padding: 0 5%;
+        width: 90%;
+    }
+
     /*---Футер---*/
 
     footer {
@@ -616,5 +617,110 @@ footer li.footer_item {
 
     #about_souz {
         display: none;
+    }
+}
+
+
+@media screen and (max-device-width: 480px) {
+
+    header {
+        display: none;
+    }
+
+    body {
+        font-size: 38px;
+    }
+
+
+    .zag {
+        font-size: 55px;
+    }
+
+    /*-----Меню-----*/
+
+    .menu_mob {
+        display: block;
+    }
+
+    .menu_desc {
+        display: none;
+    }
+
+    .icon img {
+        max-width: 60px;
+    }
+
+    nav ul li > a {
+        font-size: 38px;
+        line-height: 1;
+        text-align: left;
+        background-color: #fafafa;
+    }
+
+    nav li a {
+        padding: 20px 10px;
+    }
+
+    nav li:hover ul.subs {
+        left: -390px;
+        top: 100%;
+        width: 470px;
+        background-color: #fafafa;
+    }
+
+    /*-----Логотип-----*/
+
+    .logo p {
+        font-size: 44px;
+    }
+
+    .logo img {
+        max-height: 120px;
+        padding: 30px 10px;
+    }
+
+    /*-----Председатель-----*/
+
+    .pred {
+        flex-wrap: wrap;
+        width: 94%;
+        padding: 50px 3% 0 3%;
+    }
+
+    .pred p {
+        font-size: 38px;
+        margin: 0 2%;
+    }
+
+    /*-------Направления деятельности----------------*/
+
+    #direct1, #direct2, #direct3, #direct4 {
+        border: none;
+    }
+
+    #direct1, #direct3 {
+        margin-top: 0;
+    }
+    .directs {
+        flex-wrap: wrap;
+    }
+
+    .direct {
+        width: 90%;
+        margin: 0 5% 25px 5%;
+    }
+
+    .direct p {
+        font-size: 55px;
+    }
+
+    .direct:hover p {
+        font-size: 65px;
+    }
+
+    /*-------Партнер--------*/
+
+    .partner {
+        width: 42%;
     }
 }
