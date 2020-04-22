@@ -818,12 +818,9 @@ h1 {
         font-size: 44px;
         padding: 80px 30px 20px 0;
         margin-bottom: 70px;
-        border-bottom: 1px solid red;
     }
 
     .author {
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
         margin: 55px 0;
     }
 
@@ -833,11 +830,7 @@ h1 {
     }
 
     .text_page {
-        text-indent: 55px;
-        letter-spacing: normal;
-        line-height: 1.88;
-        text-align: justify;
-        padding-bottom: 15px;
+        padding-bottom: 50px;
     }
 
 
