@@ -702,6 +702,10 @@ h1 {
         font-size: 38px;
     }
 
+    .container_page{
+        padding: 0 4%;
+        width: 92%
+    }
 
     .zag {
         font-size: 55px;
